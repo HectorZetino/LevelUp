@@ -23,11 +23,11 @@ const createPokeCard = (pokemon) => {
     const { id, name, sprites, types} = pokemon;
     const type = types[0].type.name;
     const pokeInnerHTML = `
-    <div class="img-container">
-        <img src="${sprites.front_default}" alt="${name}"/>
-    </div>
     <div class="info">
         <span class="number">${id}</span>
+        <div class="img-container">
+            <img src="${sprites.front_default}" alt="${name}"/>
+        </div>
         <h3 class="name">${name}</h3>
         <small class="type">Tipo: <span>${type}</span></small>
     </div>
